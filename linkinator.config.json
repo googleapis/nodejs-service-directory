@@ -3,9 +3,7 @@
   "skip": [
     "https://codecov.io/gh/googleapis/",
     "www.googleapis.com",
-    "img.shields.io",
-    "https://github.com/googleapis/nodejs-security-directory.*",
-    "googleapis.dev/nodejs/servicedirectory/latest/index.html"
+    "img.shields.io"
   ],
   "silent": true,
   "concurrency": 10
