@@ -29,7 +29,8 @@ for version in versions:
     name,
     generator_args={
       "grpc-service-config": f"google/cloud/{name}/{version}/{name}_grpc_service_config.json",
-      'package-name': '@google-cloud/service-directory'
+      'package-name': '@google-cloud/service-directory',
+      "main-service": "ServiceDirectory"
     },
     extra_proto_files=['google/cloud/common_resources.proto'],
     proto_path=f'/google/cloud/{name}/{version}',
@@ -44,3 +45,5 @@ s.copy(templates, excludes=[])
 # Node.js specific cleanup
 subprocess.run(['npm', 'install'])
 subprocess.run(['npm', 'run', 'fix'])
+subprocess.run(['npx', 'compileProtos', 'src'])
+

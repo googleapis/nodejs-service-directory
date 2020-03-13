@@ -17,8 +17,8 @@ const path = require('path');
 module.exports = {
   entry: './src/index.ts',
   output: {
-    library: 'LookupService',
-    filename: './lookup-service.js',
+    library: 'ServiceDirectory',
+    filename: './service-directory.js',
   },
   node: {
     child_process: 'empty',
