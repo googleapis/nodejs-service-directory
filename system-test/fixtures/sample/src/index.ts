@@ -19,8 +19,8 @@
 import {LookupServiceClient, RegistrationServiceClient} from '@google-cloud/service-directory';
 
 function main() {
-  const lookupServiceClient = new LookupServiceClient();
-  const registrationServiceClient = new RegistrationServiceClient();
+  new LookupServiceClient();
+  new RegistrationServiceClient();
 }
 
 main();
