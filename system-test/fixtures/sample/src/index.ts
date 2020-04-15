@@ -16,10 +16,7 @@
 // ** https://github.com/googleapis/gapic-generator-typescript **
 // ** All changes to this file may be overwritten. **
 
-import {
-  LookupServiceClient,
-  RegistrationServiceClient,
-} from '@google-cloud/service-directory';
+import {LookupServiceClient, RegistrationServiceClient} from '@google-cloud/service-directory';
 
 function main() {
   new LookupServiceClient();
