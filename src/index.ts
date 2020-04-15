@@ -22,4 +22,4 @@ const RegistrationServiceClient = v1beta1.RegistrationServiceClient;
 export {v1beta1, LookupServiceClient, RegistrationServiceClient};
 export default {v1beta1, LookupServiceClient, RegistrationServiceClient};
 import * as protos from '../protos/protos';
-export {protos}
+export {protos};
