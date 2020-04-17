@@ -1,6 +1,20 @@
 {
-  "updateTime": "2020-04-11T00:54:31.861385Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/nodejs-service-directory.git",
+        "sha": "8ad96faa37627d316cc0e7d18dc7bc0986c671ec"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "bcc476396e799806d3355e87246c6becf6250a70",
+        "internalRef": "306974763"
+      }
+    },
     {
       "git": {
         "name": "synthtool",
