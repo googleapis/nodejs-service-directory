@@ -16,11 +16,11 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-east1',
-    namespaceId = 'my-namespace',
-    serviceId = 'my-service',
-    endpointId = 'my-endpoint',
+  projectId = 'my-project',
+  locationId = 'us-east1',
+  namespaceId = 'my-namespace',
+  serviceId = 'my-service',
+  endpointId = 'my-endpoint'
 ) {
   // [START servicedirectory_create_endpoint]
   //
@@ -33,21 +33,26 @@ async function main(
   // const endpointId = 'my-endpoint';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} =
-      require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the service name
   const serviceName = registrationServiceClient.servicePath(
-      projectId, locationId, namespaceId, serviceId);
+    projectId,
+    locationId,
+    namespaceId,
+    serviceId
+  );
 
   async function createEndpoint() {
     const [endpoint] = await registrationServiceClient.createEndpoint({
       parent: serviceName,
       endpointId: endpointId,
-      endpoint: {address: '10.0.0.1', port: 8080}
+      endpoint: {address: '10.0.0.1', port: 8080},
     });
 
     console.log(`Created endpoint: ${endpoint.name}`);

@@ -26,18 +26,30 @@ const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 
 const registrationServiceClient = new sd.RegistrationServiceClient();
 const projectId = process.env.GCLOUD_PROJECT;
-const locationId = 'us-central1'
+const locationId = 'us-central1';
 
 describe('Service Directory Samples', () => {
   const namespaceId = `namespace-${uuid.v4().split('-')[0]}`;
   const namespaceName = registrationServiceClient.namespacePath(
-      projectId, locationId, namespaceId);
-  const serviceId = `test-service`;
+    projectId,
+    locationId,
+    namespaceId
+  );
+  const serviceId = 'test-service';
   const serviceName = registrationServiceClient.servicePath(
-      projectId, locationId, namespaceId, serviceId);
-  const endpointId = `test-endpoint`;
+    projectId,
+    locationId,
+    namespaceId,
+    serviceId
+  );
+  const endpointId = 'test-endpoint';
   const endpointName = registrationServiceClient.endpointPath(
-      projectId, locationId, namespaceId, serviceId, endpointId);
+    projectId,
+    locationId,
+    namespaceId,
+    serviceId,
+    endpointId
+  );
 
   before(async () => {
     if (!projectId) {
@@ -47,43 +59,50 @@ describe('Service Directory Samples', () => {
 
   it('should create a namespace', async () => {
     const output = execSync(
-        `node createNamespace ${projectId} ${locationId} ${namespaceId}`);
+      `node createNamespace ${projectId} ${locationId} ${namespaceId}`
+    );
     assert.match(output, new RegExp(`Created namespace: ${namespaceName}`));
   });
 
   it('should create a service', async () => {
-    const output = execSync(`node createService ${projectId} ${locationId} ${
-        namespaceId} ${serviceId}`);
+    const output = execSync(
+      `node createService ${projectId} ${locationId} ${namespaceId} ${serviceId}`
+    );
     assert.match(output, new RegExp(`Created service: ${serviceName}`));
   });
 
   it('should create an endpoint', async () => {
-    const output = execSync(`node createEndpoint ${projectId} ${locationId} ${
-        namespaceId} ${serviceId} ${endpointId}`);
+    const output = execSync(
+      `node createEndpoint ${projectId} ${locationId} ${namespaceId} ${serviceId} ${endpointId}`
+    );
     assert.match(output, new RegExp(`Created endpoint: ${endpointName}`));
   });
 
   it('should resolve service', async () => {
-    const output = execSync(`node resolveService ${projectId} ${locationId} ${
-        namespaceId} ${serviceId}`);
+    const output = execSync(
+      `node resolveService ${projectId} ${locationId} ${namespaceId} ${serviceId}`
+    );
     assert.match(output, new RegExp(`Resolved service: ${serviceName}`));
   });
 
   it('should delete an endpoint', async () => {
-    const output = execSync(`node deleteEndpoint ${projectId} ${locationId} ${
-        namespaceId} ${serviceId} ${endpointId}`);
+    const output = execSync(
+      `node deleteEndpoint ${projectId} ${locationId} ${namespaceId} ${serviceId} ${endpointId}`
+    );
     assert.match(output, new RegExp(`Deleted endpoint: ${endpointName}`));
   });
 
   it('should delete a service', async () => {
-    const output = execSync(`node deleteService ${projectId} ${locationId} ${
-        namespaceId} ${serviceId}`);
+    const output = execSync(
+      `node deleteService ${projectId} ${locationId} ${namespaceId} ${serviceId}`
+    );
     assert.match(output, new RegExp(`Deleted service: ${serviceName}`));
   });
 
   it('should delete a namespace', async () => {
     const output = execSync(
-        `node deleteNamespace ${projectId} ${locationId} ${namespaceId}`);
+      `node deleteNamespace ${projectId} ${locationId} ${namespaceId}`
+    );
     assert.match(output, new RegExp(`Deleted namespace: ${namespaceName}`));
   });
 });

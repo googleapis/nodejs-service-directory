@@ -16,10 +16,10 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-east1',
-    namespaceId = 'my-namespace',
-    serviceId = 'my-service',
+  projectId = 'my-project',
+  locationId = 'us-east1',
+  namespaceId = 'my-namespace',
+  serviceId = 'my-service'
 ) {
   // [START servicedirectory_resolve_service]
   //
@@ -38,11 +38,16 @@ async function main(
 
   // Build the service name
   const serviceName = lookupServiceClient.servicePath(
-      projectId, locationId, namespaceId, serviceId);
+    projectId,
+    locationId,
+    namespaceId,
+    serviceId
+  );
 
   async function resolveService() {
-    const [response] =
-        await lookupServiceClient.resolveService({name: serviceName});
+    const [response] = await lookupServiceClient.resolveService({
+      name: serviceName,
+    });
 
     console.log(`Resolved service: ${response.service.name}`);
     for (const e of response.service.endpoints) {

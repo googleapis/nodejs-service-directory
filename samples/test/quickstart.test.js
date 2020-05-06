@@ -25,7 +25,7 @@ const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 const cwd = path.join(__dirname, '..');
 
 const projectId = process.env.GCLOUD_PROJECT;
-const locationId = 'us-central1'
+const locationId = 'us-central1';
 
 describe('Service Directory Quickstart', () => {
   it('should run quickstart.js', async () => {

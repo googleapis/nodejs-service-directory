@@ -16,11 +16,11 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-east1',
-    namespaceId = 'my-namespace',
-    serviceId = 'my-service',
-    endpointId = 'my-endpoint',
+  projectId = 'my-project',
+  locationId = 'us-east1',
+  namespaceId = 'my-namespace',
+  serviceId = 'my-service',
+  endpointId = 'my-endpoint'
 ) {
   // [START servicedirectory_delete_endpoint]
   //
@@ -33,15 +33,21 @@ async function main(
   // const endpointId = 'my-endpoint';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} =
-      require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the endpoint name
   const endpointName = registrationServiceClient.endpointPath(
-      projectId, locationId, namespaceId, serviceId, endpointId);
+    projectId,
+    locationId,
+    namespaceId,
+    serviceId,
+    endpointId
+  );
 
   async function deleteEndpoint() {
     await registrationServiceClient.deleteEndpoint({

@@ -16,9 +16,9 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-central1',
-    namespaceId = 'my-namespace',
+  projectId = 'my-project',
+  locationId = 'us-central1',
+  namespaceId = 'my-namespace'
 ) {
   // [START servicedirectory_create_namespace]
   //
@@ -29,19 +29,24 @@ async function main(
   // const namespaceId = 'my-namespace';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} =
-      require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the location name
-  const locationName =
-      registrationServiceClient.locationPath(projectId, locationId);
+  const locationName = registrationServiceClient.locationPath(
+    projectId,
+    locationId
+  );
 
   async function createNamespace() {
-    const [namespace] = await registrationServiceClient.createNamespace(
-        {parent: locationName, namespaceId: namespaceId});
+    const [namespace] = await registrationServiceClient.createNamespace({
+      parent: locationName,
+      namespaceId: namespaceId,
+    });
 
     console.log(`Created namespace: ${namespace.name}`);
     return namespace;

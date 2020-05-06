@@ -16,10 +16,10 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-east1',
-    namespaceId = 'my-namespace',
-    serviceId = 'my-service',
+  projectId = 'my-project',
+  locationId = 'us-east1',
+  namespaceId = 'my-namespace',
+  serviceId = 'my-service'
 ) {
   // [START servicedirectory_delete_service]
   //
@@ -31,15 +31,20 @@ async function main(
   // const serviceId = 'my-service';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} =
-      require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the service name
-  const serviceName =
-      registrationServiceClient.servicePath(projectId, locationId, namespaceId, serviceId);
+  const serviceName = registrationServiceClient.servicePath(
+    projectId,
+    locationId,
+    namespaceId,
+    serviceId
+  );
 
   async function deleteService() {
     await registrationServiceClient.deleteService({

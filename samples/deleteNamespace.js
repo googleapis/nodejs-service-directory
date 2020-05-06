@@ -16,9 +16,9 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-east1',
-    namespaceId = 'my-namespace',
+  projectId = 'my-project',
+  locationId = 'us-east1',
+  namespaceId = 'my-namespace'
 ) {
   // [START servicedirectory_delete_namespace]
   //
@@ -29,15 +29,19 @@ async function main(
   // const namespaceId = 'my-namespace';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} =
-      require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the namespace name
-  const namespaceName =
-      registrationServiceClient.namespacePath(projectId, locationId, namespaceId);
+  const namespaceName = registrationServiceClient.namespacePath(
+    projectId,
+    locationId,
+    namespaceId
+  );
 
   async function deleteNamespace() {
     await registrationServiceClient.deleteNamespace({

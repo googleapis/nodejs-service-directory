@@ -16,8 +16,9 @@
 'use strict';
 
 async function quickstart(
-    projectId = 'my-project',
-    locationId = 'us-central1') {
+  projectId = 'my-project',
+  locationId = 'us-central1'
+) {
   // [START servicedirectory_quickstart]
   //
   // TODO(developer): Uncomment these variables before running the sample.
@@ -26,18 +27,23 @@ async function quickstart(
   // const locationId = 'us-central1';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} = require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the location name
-  const locationName =
-      registrationServiceClient.locationPath(projectId, locationId);
+  const locationName = registrationServiceClient.locationPath(
+    projectId,
+    locationId
+  );
 
   async function listNamespaces() {
-    const [namespaces] = await registrationServiceClient.listNamespaces(
-        {parent: locationName});
+    const [namespaces] = await registrationServiceClient.listNamespaces({
+      parent: locationName,
+    });
 
     for (const n of namespaces) {
       console.log(`${n.name}`);

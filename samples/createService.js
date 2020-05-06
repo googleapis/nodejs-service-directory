@@ -16,10 +16,10 @@
 'use strict';
 
 async function main(
-    projectId = 'my-project',
-    locationId = 'us-east1',
-    namespaceId = 'my-namespace',
-    serviceId = 'my-service',
+  projectId = 'my-project',
+  locationId = 'us-east1',
+  namespaceId = 'my-namespace',
+  serviceId = 'my-service'
 ) {
   // [START servicedirectory_create_service]
   //
@@ -31,15 +31,19 @@ async function main(
   // const serviceId = 'my-service';
 
   // Imports the Google Cloud client library
-  const {RegistrationServiceClient} =
-      require('@google-cloud/service-directory');
+  const {
+    RegistrationServiceClient,
+  } = require('@google-cloud/service-directory');
 
   // Creates a client
   const registrationServiceClient = new RegistrationServiceClient();
 
   // Build the namespace name
   const namespaceName = registrationServiceClient.namespacePath(
-      projectId, locationId, namespaceId);
+    projectId,
+    locationId,
+    namespaceId
+  );
 
   async function createService() {
     const [service] = await registrationServiceClient.createService({
