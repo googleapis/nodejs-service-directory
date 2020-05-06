@@ -15,21 +15,21 @@
 
 'use strict';
 
-const uuid = require('uuid');
-const path = require('path');
 const {assert} = require('chai');
 const cp = require('child_process');
-const {describe, it} = require('mocha');
+const {describe, it, before} = require('mocha');
 const sd = require('@google-cloud/service-directory');
+const {v4} = require('uuid');
 
 const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 
 const registrationServiceClient = new sd.RegistrationServiceClient();
 const projectId = process.env.GCLOUD_PROJECT;
 const locationId = 'us-central1';
+const uniqueRunId = v4();
 
 describe('Service Directory Samples', () => {
-  const namespaceId = `namespace-${uuid.v4().split('-')[0]}`;
+  const namespaceId = `namespace-${uniqueRunId}`;
   const namespaceName = registrationServiceClient.namespacePath(
     projectId,
     locationId,
