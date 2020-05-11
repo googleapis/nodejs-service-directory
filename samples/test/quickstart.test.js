@@ -29,7 +29,7 @@ const locationId = 'us-central1';
 
 describe('Service Directory Quickstart', () => {
   it('should run quickstart.js', async () => {
-    const stdout = execSync(`node ./quickstart.js ${projectId} ${locationId}`, {
+    const stdout = execSync(`node quickstart.js ${projectId} ${locationId}`, {
       cwd,
     });
     // build should have exited with success status.

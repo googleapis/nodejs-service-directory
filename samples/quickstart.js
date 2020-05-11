@@ -45,6 +45,7 @@ async function quickstart(
       parent: locationName,
     });
 
+    console.log('Namespaces: ');
     for (const n of namespaces) {
       console.log(`${n.name}`);
     }
