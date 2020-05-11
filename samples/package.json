@@ -15,6 +15,7 @@
   "dependencies": {
     "@google-cloud/service-directory": "^1.0.1",
     "eslint": "^7.0.0",
+    "json-schema": "^0.2.5",
     "uuid": "^8.0.0"
   },
   "devDependencies": {
