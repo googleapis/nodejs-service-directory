@@ -3,23 +3,15 @@
     {
       "git": {
         "name": ".",
-        "remote": "https://github.com/googleapis/nodejs-service-directory.git",
-        "sha": "196289942daa3c0cc0ba1d1c3809186c52903e84"
-      }
-    },
-    {
-      "git": {
-        "name": "googleapis",
-        "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "83816bb3093686a28af2891db5b7506614a820b1",
-        "internalRef": "310509915"
+        "remote": "git@github.com:googleapis/nodejs-service-directory.git",
+        "sha": "dc7773cc587ea58ee16b126f1ebab3ef469ba3c8"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "be74d3e532faa47eb59f1a0eaebde0860d1d8ab4"
+        "sha": "a0ee80e0492a03b9b2bfefb5cca7eaf17bf10438"
       }
     }
   ],
