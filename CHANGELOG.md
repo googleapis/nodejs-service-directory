@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.1.3](https://www.github.com/googleapis/nodejs-service-directory/compare/v2.1.2...v2.1.3) (2020-11-19)
+
+
+### Bug Fixes
+
+* only fallback if fetch exists on window ([59233c1](https://www.github.com/googleapis/nodejs-service-directory/commit/59233c1499218aa107ab0688cf0d004a67c47c96))
+
 ### [2.1.2](https://www.github.com/googleapis/nodejs-service-directory/compare/v2.1.1...v2.1.2) (2020-11-06)
 
 
