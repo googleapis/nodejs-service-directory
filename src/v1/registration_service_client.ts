@@ -425,6 +425,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createNamespace(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.create_namespace.js</caption>
+   * region_tag:servicedirectory_create_namespace_sample
+   *
    */
   createNamespace(
     request?: protos.google.cloud.servicedirectory.v1.ICreateNamespaceRequest,
@@ -519,6 +523,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getNamespace(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.get_namespace.js</caption>
+   * region_tag:servicedirectory_get_namespace_sample
+   *
    */
   getNamespace(
     request?: protos.google.cloud.servicedirectory.v1.IGetNamespaceRequest,
@@ -615,6 +623,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateNamespace(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.update_namespace.js</caption>
+   * region_tag:servicedirectory_update_namespace_sample
+   *
    */
   updateNamespace(
     request?: protos.google.cloud.servicedirectory.v1.IUpdateNamespaceRequest,
@@ -713,6 +725,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteNamespace(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.delete_namespace.js</caption>
+   * region_tag:servicedirectory_delete_namespace_sample
+   *
    */
   deleteNamespace(
     request?: protos.google.cloud.servicedirectory.v1.IDeleteNamespaceRequest,
@@ -817,6 +833,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createService(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.create_service.js</caption>
+   * region_tag:servicedirectory_create_service_sample
+   *
    */
   createService(
     request?: protos.google.cloud.servicedirectory.v1.ICreateServiceRequest,
@@ -908,6 +928,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getService(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.get_service.js</caption>
+   * region_tag:servicedirectory_get_service_sample
+   *
    */
   getService(
     request?: protos.google.cloud.servicedirectory.v1.IGetServiceRequest,
@@ -1001,6 +1025,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateService(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.update_service.js</caption>
+   * region_tag:servicedirectory_update_service_sample
+   *
    */
   updateService(
     request?: protos.google.cloud.servicedirectory.v1.IUpdateServiceRequest,
@@ -1093,6 +1121,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteService(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.delete_service.js</caption>
+   * region_tag:servicedirectory_delete_service_sample
+   *
    */
   deleteService(
     request?: protos.google.cloud.servicedirectory.v1.IDeleteServiceRequest,
@@ -1197,6 +1229,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createEndpoint(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.create_endpoint.js</caption>
+   * region_tag:servicedirectory_create_endpoint_sample
+   *
    */
   createEndpoint(
     request?: protos.google.cloud.servicedirectory.v1.ICreateEndpointRequest,
@@ -1291,6 +1327,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getEndpoint(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.get_endpoint.js</caption>
+   * region_tag:servicedirectory_get_endpoint_sample
+   *
    */
   getEndpoint(
     request?: protos.google.cloud.servicedirectory.v1.IGetEndpointRequest,
@@ -1387,6 +1427,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateEndpoint(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.update_endpoint.js</caption>
+   * region_tag:servicedirectory_update_endpoint_sample
+   *
    */
   updateEndpoint(
     request?: protos.google.cloud.servicedirectory.v1.IUpdateEndpointRequest,
@@ -1484,6 +1528,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteEndpoint(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.delete_endpoint.js</caption>
+   * region_tag:servicedirectory_delete_endpoint_sample
+   *
    */
   deleteEndpoint(
     request?: protos.google.cloud.servicedirectory.v1.IDeleteEndpointRequest,
@@ -1578,6 +1626,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.get_iam_policy.js</caption>
+   * region_tag:servicedirectory_get_iam_policy_sample
+   *
    */
   getIamPolicy(
     request?: protos.google.iam.v1.IGetIamPolicyRequest,
@@ -1667,6 +1719,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.setIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.set_iam_policy.js</caption>
+   * region_tag:servicedirectory_set_iam_policy_sample
+   *
    */
   setIamPolicy(
     request?: protos.google.iam.v1.ISetIamPolicyRequest,
@@ -1756,6 +1812,10 @@ export class RegistrationServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.testIamPermissions(request);
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.test_iam_permissions.js</caption>
+   * region_tag:servicedirectory_test_iam_permissions_sample
+   *
    */
   testIamPermissions(
     request?: protos.google.iam.v1.ITestIamPermissionsRequest,
@@ -1887,6 +1947,10 @@ export class RegistrationServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_namespaces.js</caption>
+   * region_tag:servicedirectory_list_namespaces_sample
+   *
    */
   listNamespaces(
     request?: protos.google.cloud.servicedirectory.v1.IListNamespacesRequest,
@@ -1989,6 +2053,10 @@ export class RegistrationServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_namespaces.js</caption>
+   * region_tag:servicedirectory_list_namespaces_sample
+   *
    */
   listNamespacesStream(
     request?: protos.google.cloud.servicedirectory.v1.IListNamespacesRequest,
@@ -2002,7 +2070,8 @@ export class RegistrationServiceClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listNamespaces'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listNamespaces.createStream(
       this.innerApiCalls.listNamespaces as gax.GaxCall,
@@ -2074,6 +2143,10 @@ export class RegistrationServiceClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_namespaces.js</caption>
+   * region_tag:servicedirectory_list_namespaces_sample
+   *
    */
   listNamespacesAsync(
     request?: protos.google.cloud.servicedirectory.v1.IListNamespacesRequest,
@@ -2088,7 +2161,8 @@ export class RegistrationServiceClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listNamespaces'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listNamespaces.asyncIterate(
       this.innerApiCalls['listNamespaces'] as GaxCall,
@@ -2178,6 +2252,10 @@ export class RegistrationServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_services.js</caption>
+   * region_tag:servicedirectory_list_services_sample
+   *
    */
   listServices(
     request?: protos.google.cloud.servicedirectory.v1.IListServicesRequest,
@@ -2272,6 +2350,10 @@ export class RegistrationServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_services.js</caption>
+   * region_tag:servicedirectory_list_services_sample
+   *
    */
   listServicesStream(
     request?: protos.google.cloud.servicedirectory.v1.IListServicesRequest,
@@ -2285,7 +2367,8 @@ export class RegistrationServiceClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listServices'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listServices.createStream(
       this.innerApiCalls.listServices as gax.GaxCall,
@@ -2349,6 +2432,10 @@ export class RegistrationServiceClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_services.js</caption>
+   * region_tag:servicedirectory_list_services_sample
+   *
    */
   listServicesAsync(
     request?: protos.google.cloud.servicedirectory.v1.IListServicesRequest,
@@ -2363,7 +2450,8 @@ export class RegistrationServiceClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listServices'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listServices.asyncIterate(
       this.innerApiCalls['listServices'] as GaxCall,
@@ -2455,6 +2543,10 @@ export class RegistrationServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_endpoints.js</caption>
+   * region_tag:servicedirectory_list_endpoints_sample
+   *
    */
   listEndpoints(
     request?: protos.google.cloud.servicedirectory.v1.IListEndpointsRequest,
@@ -2551,6 +2643,10 @@ export class RegistrationServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_endpoints.js</caption>
+   * region_tag:servicedirectory_list_endpoints_sample
+   *
    */
   listEndpointsStream(
     request?: protos.google.cloud.servicedirectory.v1.IListEndpointsRequest,
@@ -2564,7 +2660,8 @@ export class RegistrationServiceClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listEndpoints'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listEndpoints.createStream(
       this.innerApiCalls.listEndpoints as gax.GaxCall,
@@ -2630,6 +2727,10 @@ export class RegistrationServiceClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1/registration_service.list_endpoints.js</caption>
+   * region_tag:servicedirectory_list_endpoints_sample
+   *
    */
   listEndpointsAsync(
     request?: protos.google.cloud.servicedirectory.v1.IListEndpointsRequest,
@@ -2644,7 +2745,8 @@ export class RegistrationServiceClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listEndpoints'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listEndpoints.asyncIterate(
       this.innerApiCalls['listEndpoints'] as GaxCall,

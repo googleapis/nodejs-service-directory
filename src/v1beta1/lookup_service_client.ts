@@ -388,6 +388,10 @@ export class LookupServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.resolveService(request);
+   *
+   * @example <caption>include:samples/generated/v1beta1/lookup_service.resolve_service.js</caption>
+   * region_tag:servicedirectory_resolve_service_sample
+   *
    */
   resolveService(
     request?: protos.google.cloud.servicedirectory.v1beta1.IResolveServiceRequest,
