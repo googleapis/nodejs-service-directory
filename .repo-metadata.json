@@ -12,5 +12,5 @@
   "name": "servicedirectory",
   "issue_tracker": "https://github.com/googleapis/nodejs-service-directory/issues",
   "api_shortname": "servicedirectory",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }
